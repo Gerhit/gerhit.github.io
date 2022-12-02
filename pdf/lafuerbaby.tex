@@ -17,7 +17,7 @@
 \definecolor{dolly}{RGB}{247, 202, 24}
 \definecolor{silver}{RGB}{108, 122, 137}
 \definecolor{rand}{RGB}{0,0,115}
-\definecolor{hellblau}{RGB}{99,237,255}
+\definecolor{hintergrund}{RGB}{255,198,100}
 \tikzset{greenvector/.style={-{Triangle[fill=shamrock]},thick,white,double=shamrock,double distance = 4pt}}
 \tikzset{redvector/.style={-{Triangle[fill=monza]},thick,white,double=monza,double distance = 4pt}}
 \tikzset{yellowvector/.style={-{Triangle[fill=dolly]},thick,white,double=dolly,double distance = 4pt}}
@@ -31,24 +31,20 @@
 
 
 \begin{document}
+\pagecolor{hintergrund}
 \begin{tikzpicture}[remember picture,overlay]
- \node[opacity=1.0,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{4-01.eps}
+ \node[opacity=1.0,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth]{baby.png}
 };
 \end{tikzpicture}
 \begin{tikzpicture}[remember picture,overlay]
-\node[white] at (6,0.5) {\small Gerrit Herrmann};
+\node[white] at (5.5,0.5) {\small Gerrit Herrmann};
 \node[rand] at (2.5,-1.5) {\Huge\bfseries Lineare Algebra};
-\node[rand] at (5.5,-11.5) {\Huge\bfseries für Babys};
-\node[cloud,line width=4, draw=rand, fill=white, minimum width=100,minimum height=80,cloud puffs=11] at (7.75,-2) {};
-\node[inner sep=0pt] at (7.75,-1.9) {\includegraphics[scale=0.35]{3d-cone.pdf}};
-\draw[line width=4,rand] (5.5,-2.5) circle (7.5pt);
-\draw[line width=4,rand] (5,-3) circle (5pt);
-\filldraw[white] (5.5,-2.5) circle (7.5pt);
-\filldraw[white] (5,-3) circle (5pt);
+\node[rand] at (5.5,-10.5) {\Huge\bfseries für Babys};
 \end{tikzpicture}
 \bfseries
 \begin{center}
 	\clearpage
+	\pagecolor{white}
 	\begin{tikzpicture}
 		\draw[black] (-4,-2) rectangle (8,8);
 		\draw[greenvector] (0,0) -- (5,3);
@@ -173,17 +169,15 @@ Wenn man den \textcolor{shamrock}{grünen}, \textcolor{monza}{roten} und \textco
 	\draw[yellowvector] (0,0) -- (6,7);
 \end{tikzpicture}\\
 Alle Vektoren zusammen mit diesen Eigenschaften nennt man einen Vektorraum.\clearpage
-\Huge Herzlichen Glückwunsch! \\
-\vspace{0.7cm}
 \begin{tikzpicture}
 	\node at (0,0) {};
-	\begin{scope}[yshift=-1]
-		\node[opacity=1,inner sep=0pt] at (0,0){\includegraphics[scale=0.25]{334.eps}
+	\begin{scope}
+		\node[opacity=1,inner sep=0pt] at (0,0){\includegraphics[width=\paperwidth,clip, trim=5cm 2cm 2cm 0.5cm]{urkunde.png}
 		};
 	\end{scope}
-\end{tikzpicture}\\
-Du bist jetzt Algebraiker.\clearpage
-\pagecolor{hellblau}
+\end{tikzpicture}
+\clearpage
+\pagecolor{hintergrund}
 \topskip0pt
 \vspace*{\fill}
 \normalsize\color{rand} Für Frederik und Marit. \\
@@ -191,7 +185,5 @@ Für die zwei besten Geschenke der Welt. \\
 Damit Ihr immer Spa\ss\ am Lernen habt und mit Neugier die Welt entdeckt.\\
 \end{center}
 \vspace*{\fill}
-\tiny Bilder: Freepik.com. Das Cover und die vorletzte Seite wurden mit Ressourcen von Freepik.com erstellt. \\
-Bild in der Traumwolke im Cover: https://texample.net/tikz/examples/3d-cone/ 
-
+\tiny Titelbild: Jörg Ostermann
 \end{document}
