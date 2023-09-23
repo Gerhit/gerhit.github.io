@@ -1,0 +1,72 @@
+nav {
+    overflow: hidden;
+    background-color: #000000;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+nav a{
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #ddd;
+    color: black;
+}
+
+nav a:active {
+    background: #ddd;
+    color: black;
+}
+
+dl {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+dl.listearbeiten {
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+dt {
+    font-weight: bold;
+    display: block;
+    grid-column-start:1;
+}
+
+dd {
+    display: block;
+}
+
+.beschreibung{
+    margin-left: 0px;
+    width: 70%;
+    display: block;
+    font-style: italic;
+    font-size: 90%;
+    grid-column-start:1;
+}
+.zeitraum {
+    text-align: right;
+}
+
+
+
+header {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+section {
+    padding-top: 30px;
+}
